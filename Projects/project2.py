@@ -53,6 +53,7 @@ if answer4 == "A" 'or' "B" 'or' "C":
         dumber += 10
 elif answer4 == "D":
     smarter += 10
+
 if smarter > dumber and smarter > stupid:
     print("you are smarter than a fifth grader")
 if dumber > smarter and dumber > stupid:
