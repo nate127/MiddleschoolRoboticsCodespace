@@ -43,12 +43,7 @@ for i in range(6):
         output += "🟨"
     else:
         output += "⬛"
-    if guess_word[5] == hidden_word[5]:
-        output += "🟩"
-    elif guess_word[5] in hidden_word:
-        output += "🟨"
-    else:
-        output += "⬛"
+
 
     # Result
     print(output)
