@@ -3,10 +3,10 @@ from utils import *
 
 # Section 1 - setup
 # TODO - set a background using set_background()
-set_background("noFilter")
+set_background("castle")
 # TODO - create at least "two variables and set their starting value. ex: cookies = 0
 mangos = 0
-optiplex = 1
+optiplex = 0
 cost = 50
 # OPTIONAL: use this invisible alien to say a message
 message_sprite = create_sprite("alien", -300,200)
@@ -19,6 +19,7 @@ message_sprite.hideturtle()
 def get_optiplex():
     global mangos, optiplex, cost
     if mangos >= cost:
+        mangos -= cost
         cost = cost * 2
         optiplex += 1
         x = -400 + 120 * optiplex
@@ -46,7 +47,7 @@ for i in range(1000000000):
     message_sprite.write(f"mangos: {mangos}\nCost: {cost}\noptiplex: {optiplex}", font=("arial",15,"bold"))
 
     # TODO - put any automatic actions here
-
+    mangos += optiplex
 
     # OPTIONAL - use the message sprite to say a message
     # message_sprite.clear()
