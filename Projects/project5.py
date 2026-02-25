@@ -5,8 +5,7 @@ turtle.setup(width=964, height=540)
 # TODO - create your player character and any other sprites
 message_sprite = create_sprite("alien", -435,140)
 message_sprite.hideturtle()
-# TODO - set your background
-# TODO - set the starting value for your variables
+# Goal of the game is to win, make the other player run out of health
 x1 = -200
 y1 = -50
 x2 = 200
