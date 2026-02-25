@@ -18,7 +18,7 @@ ya2 = -50
 arrow1_list = []
 arrow2_list = []
 
-evil_lives = 5
+evil_lives = 10
 good_lives = 5
 sprite_list = []
 set_background("grass")
