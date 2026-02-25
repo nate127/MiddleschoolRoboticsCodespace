@@ -1,6 +1,6 @@
 import turtle, time, random
 from utils import *
-
+turtle.setup(width=964, height=540)
 # Section 1 - Variables
 # TODO - add starting values for all the variables
 x1 =-200

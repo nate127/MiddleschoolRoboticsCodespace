@@ -45,7 +45,7 @@ window.onkeypress(get_mangos,"space")
 window.onkeypress(get_optiplex,"o")
 window.onkeypress(get_gpu,"g")
 mangos += optiplex
-mangos += gpu * 25
+mangos += gpu * 5
 # TODO - choose a key to do the action. ex: window.onkeypress(my_control, "space")
 
 # TODO - make a second control
@@ -62,11 +62,11 @@ for i in range(1000000000):
     message_sprite.write(f"CRYPTO: {mangos}\nOptiplex Cost: {cost}\nOPTIPLEXES: {optiplex}\n GPUS: {gpu}\nGPU Cost: {gpu_cost}", font=("",15,"bold"))
 
     # TODO - put any automatic actions here
-    mangos += optiplex
-    mangos += gpu * 25
+    mangos += optiplex * 1
+    mangos += gpu * 30
     # OPTIONAL - use the message sprite to say a message
     # message_sprite.clear()
     # message_sprite.write("MINE MY MANGO COIN FORVER OR ELSE")
 
-    time.sleep(1)
+    time.sleep(0.1)
     window.update()
